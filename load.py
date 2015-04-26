@@ -22,7 +22,7 @@ def load_path(path):
     img = cvtColor(img, COLOR_BGR2RGB)
     return img
 
-def load(ntrain=2000, ntest=1000):
+def github_avatars(ntrain=2000, ntest=1000):
 	pool = Pool(8)
 	fs = [os.path.join(data_dir, path) for path in os.listdir(data_dir)]
 	fs = random.sample(fs, ntrain+ntest)
